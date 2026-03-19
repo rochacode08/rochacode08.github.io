@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --base-gray-100: #0D0E11;
+  --base-gray-200: #16181D;
+  --base-gray-300: #292C34;
+  --base-gray-400: #878EA1;
+  --base-gray-500: #C0C4CE;
+  --base-gray-600: #E2E4E9;
+
+  --principal-red: #E3646E;
+  --principal-purple: #BB72E9;
+  --principal-blue: #3996DB;
+  --principal-green: #82BC4F;
+  --principal-yellow: #EABD5F;
+
+  --font-family-title: "Asap", sans-serif;
+  --font-family-subtitle: "Inconsolata", monospace, sans-serif;
+  --font-family-text: "Maven Pro", sans-serif;
+
+  --h1: 800 3.5rem/120% var(--font-family-title);
+  --h2: 800 2rem/120% var(--font-family-title);
+  --h3: 800 1rem/120% var(--font-family-title);
+
+  --subtitle: 600 1.25rem/120% var(--font-family-subtitle);
+
+  --text-md: 600 1rem/140% var(--font-family-text);
+  --text-sm: 600 0.875rem/140% var(--font-family-text);
+}
+
+body {
+  font: var(--text-md);
+  color: var(--base-gray-500);
+}
+
+h1 { font: var(--h1); }
+h2 { font: var(--h2); }
+h3 { font: var(--h3); }
+
+h1, h2, h3 {
+  color: var(--base-gray-600);
+}
+
+.subtitle {
+  font: var(--subtitle);
+  color: var(--base-gray-500);
+}
+
+.text-md {
+  font: var(--text-md);
+}
+
+.text-sm {
+  font: var(--text-sm);
+  color: var(--base-gray-400);
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  padding-inline: 10.19rem;
+}
