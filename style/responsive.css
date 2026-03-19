@@ -1,0 +1,312 @@
+/* Telas grandes (desktop) */
+@media (min-width: 1680px) { 
+  header {
+    background-image: url(../assets/images/background-intro.png);
+    background-position: center center;
+  }
+
+  #contacts {
+    background-image: url(../assets/images/background-contacts.png);
+    background-position: center center;
+  }
+}
+
+@media (max-width: 1440px) { 
+  header {
+    background-image: url(../assets/images/background-intro-1024.png);
+    background-position: center center;
+  }
+
+  #contacts {
+    background-image: url(../assets/images/background-contacts.png);
+    background-position: center center;
+  }
+}
+
+@media (min-width: 1024px) {
+  #info #about-me {
+    & #avatar {
+      max-width: 9rem;
+
+      & img:nth-child(1) {
+        max-width: 9rem;
+        width: 9rem;
+        height: 9rem;
+      }
+
+      & img:nth-child(2) {
+        width: 2.57rem;
+        height: 2.57rem;
+        bottom: 0.9rem;
+        right: -0.25rem;
+      }
+    }
+  }
+}
+
+/* Tablets e telas menores */
+@media (max-width: 1024px) {
+  .container {
+    padding-inline: 2rem;
+  }
+
+  header {
+    background-image: url(../assets/images/background-intro-1024.png);
+    background-position: center center;
+  }
+
+  #contacts {
+    background-image: url(../assets/images/background-contacts-1024.png);
+    background-position: center center;
+  }
+
+  #info #about-me {
+    & h1 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    & .text-sm {
+      text-align: center;
+      padding-bottom: 3rem;
+
+      & br {
+        display: none;
+      }
+    }
+  }
+
+  #tags {
+    gap: 0.75rem;
+    padding-inline: 1rem;
+  }
+
+  /* Projects Section */
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  main .grid .project-card {
+    & h3 {
+      padding-block: 1rem 0.5rem;
+    }
+  }
+
+  /* Services Section */
+  section#services .grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding-block: 2rem 5rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  :root {
+    --h1: 800 2.5rem/120% var(--font-family-title);
+    --h2: 800 clamp(1.25rem, 5vw, 1.75rem)/120% var(--font-family-title);
+    --subtitle: 600 1rem/120% var(--font-family-subtitle);
+  }
+
+  .container {
+    padding-inline: 1rem;
+  }
+
+  /* Header */
+  header {
+    padding-top: 3rem;
+    background-image: url(../assets/images/background-intro-768.png);
+  }
+
+  #info #about-me {
+    & .text-sm {
+      padding-bottom: 2rem;
+    }
+  }
+
+  .container .arrow {
+    padding-block: 3rem 2rem;
+  }
+
+  #tags {
+    gap: 0.5rem;
+
+    & .tag {
+      & img {
+        padding-left: 0.75rem;
+        width: 2rem;
+      }
+
+      & span {
+        padding-right: 0.75rem;
+        font-size: 0.875rem;
+      }
+    }
+  }
+
+  /* Projects Section */
+  main #my-projects {
+    padding-block: 3rem 2rem;
+  }
+
+  main .grid {
+    padding-bottom: 5rem;
+  }
+
+  /* Services Section */
+  section#services {
+    & #my-services {
+      padding-block: 3rem 2rem;
+    }
+
+    & .grid {
+      gap: 1rem;
+      padding-block: 2rem 4rem;
+
+      & .card {
+        text-align: center;
+      }
+    }
+  }
+
+  /* Contacts Section */
+  #contacts {
+    & .contact {
+      padding-block: 4rem 2rem;
+      text-align: center;
+    }
+  }
+
+  #links {
+    padding-bottom: 6rem;
+
+    & .link {
+      & span {
+        font-size: 0.875rem;
+      }
+
+      & img:nth-child(1) {
+        padding: 1rem 0 1rem 1rem;
+      }
+
+      & img:nth-child(3) {
+        padding: 1rem 1rem 1rem 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  header {
+    background-image: url(../assets/images/background-intro-425.png);
+    background-position: center;
+  }
+
+  #contacts {
+    background-image: url(../assets/images/background-contacts-425.png);
+    background-position: center;
+  }
+
+  #links {
+    max-width: 100%;
+    padding-inline: 1rem;
+    padding-bottom: 6rem;
+
+    & .link {
+      & span {
+        font-size: 0.75rem;
+      }
+
+      & img:nth-child(1) {
+        padding: 0.75rem 0 0.75rem 0.75rem;
+        width: 2rem;
+      }
+
+      & img:nth-child(3) {
+        padding: 0.75rem 0.75rem 0.75rem 0;
+        width: 2.5rem;
+      }
+    }
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 375px) {
+  :root {
+    --h1: 800 2rem/120% var(--font-family-title);
+  }
+
+  header {
+    background-image: url(../assets/images/background-intro-375.png);
+    background-position: center;
+  }
+
+  .container {
+    padding-inline: 0.75rem;
+  }
+
+  #info #about-me {
+    & #avatar {
+      & img {
+        max-width: 6rem;
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+  }
+
+  #tags .tag {
+    & img {
+      padding-left: 0.5rem;
+    }
+
+    & span {
+      padding-right: 0.5rem;
+    }
+  }
+
+  main .grid {
+    grid-template-columns: 1fr;
+  }
+
+  section#services .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 320px) {
+
+  /* Reduzimos ainda mais os títulos principais */
+  :root {
+    --h1: 800 1.75rem/120% var(--font-family-title);
+    --h2: 800 1.25rem/120% var(--font-family-title);
+  }
+
+  header {
+    background-image: url(../assets/images/background-intro-320.png);
+    background-position: center;
+  }
+
+  p.subtitle {
+    text-align: center;
+  }
+
+  /* Reduzimos as margens laterais para ganhar espaço útil */
+  .container {
+    padding-inline: 0.5rem;
+  }
+
+  /* Diminuímos o espaçamento e a fonte das tags para não quebrarem a tela */
+  #tags {
+    gap: 0.25rem;
+  }
+
+  #tags .tag img {
+    padding-left: 0.25rem;
+    width: 1.5rem;
+  }
+
+  #tags .tag span {
+    padding-right: 0.25rem;
+    font-size: 0.75rem;
+  }
+}
