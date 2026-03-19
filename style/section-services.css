@@ -1,0 +1,43 @@
+section#services {
+  background-color: var(--base-gray-100);
+
+  & #my-services {
+    padding-block: 5.5rem 3.5rem;
+
+    flex-direction: column;
+    align-items: center;
+
+    & p {
+      padding-bottom: 0.5rem;
+
+      color: var(--principal-red);
+    }
+  }
+
+  & .grid {
+    grid-template-columns: repeat(auto-fit, minmax(17.5rem,1fr));
+    grid-template-rows: repeat(1,1fr);
+    gap: 1.5rem;
+    padding-block: 3.5rem 7.5rem;
+
+    & img {
+      padding-block: 1.25rem;
+      width: 3rem;
+      height: auto;
+    }
+
+    & .card {
+      border: 1px solid var(--base-gray-200);
+      border-radius: 0.75rem;
+      padding-inline: 1.25rem;
+
+      & h3 {
+        padding-bottom: 0.5rem;
+      }
+      
+      & p {
+        padding-bottom: 1.25rem;
+      }
+    }
+  }
+}
