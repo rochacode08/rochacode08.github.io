@@ -87,7 +87,7 @@ Este projeto está sob a licença **MIT**. Sinta-se à vontade para usá-lo como
 ## 📬 Contato
 
 <p>
-    <a href="mailto:rochacode08@gmail.com">
+    <a href="mailto:gabrielrocha.devstack@gmail.com">
         <img alt="Email" title="Me envie um email" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
     </a>
     <a href="https://www.linkedin.com/in/gabriel-rocha-devstack" target="_blank">
