@@ -18,16 +18,16 @@ main {
     gap: 1.5rem;
     padding-bottom: 4rem;
 
-     /* Sniptap */         :nth-child(1)  img { border: 0.75rem solid var(--principal-blue);   border-bottom: none; }
-    /* Bolos Cris */       :nth-child(2)  img { border: 0.75rem solid var(--principal-purple); border-bottom: none; }
-    /* Festivite */        :nth-child(4)  img { border: 0.75rem solid var(--principal-purple); border-bottom: none; }
-    /* NLW */              :nth-child(5)  img { border: 0.75rem solid var(--principal-yellow); border-bottom: none; }
-    /* Estrelas do Amanhã */:nth-child(7) img { border: 0.75rem solid var(--principal-red);    border-bottom: none; }
-    /* Convert */          :nth-child(8)  img { border: 0.75rem solid var(--principal-blue);   border-bottom: none; }
-    /* GTA */              :nth-child(10) img { border: 0.75rem solid var(--principal-yellow); border-bottom: none; }
-    /* Santorini */        :nth-child(12) img { border: 0.75rem solid var(--principal-blue);   border-bottom: none; }
-    /* Comida Brasileira */:nth-child(13) img { border: 0.75rem solid var(--principal-red);    border-bottom: none; }
-    /* Indie New Year */   :nth-child(14) img { border: 0.75rem solid var(--principal-yellow); border-bottom: none; }
+    /* Sniptap */           .project-card:nth-child(1)  img { border: 0.75rem solid var(--principal-blue);   border-bottom: none; }
+    /* Bolos Cris */        .project-card:nth-child(2)  img { border: 0.75rem solid var(--principal-purple); border-bottom: none; }
+    /* Festivite */         .project-card:nth-child(4)  img { border: 0.75rem solid var(--principal-purple); border-bottom: none; }
+    /* NLW */               .project-card:nth-child(5)  img { border: 0.75rem solid var(--principal-yellow); border-bottom: none; }
+    /* Estrelas do Amanhã */.project-card:nth-child(7)  img { border: 0.75rem solid var(--principal-red);    border-bottom: none; }
+    /* Convert */           .project-card:nth-child(8)  img { border: 0.75rem solid var(--principal-blue);   border-bottom: none; }
+    /* GTA */               .project-card:nth-child(10) img { border: 0.75rem solid var(--principal-yellow); border-bottom: none; }
+    /* Santorini */         .project-card:nth-child(12) img { border: 0.75rem solid var(--principal-blue);   border-bottom: none; }
+    /* Comida Brasileira */ .project-card:nth-child(13) img { border: 0.75rem solid var(--principal-red);    border-bottom: none; }
+    /* Indie New Year */    .project-card:nth-child(14) img { border: 0.75rem solid var(--principal-yellow); border-bottom: none; }
 
     .project-card {
       background-color: var(--base-gray-300);
