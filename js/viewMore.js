@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function updateVisibility() {
-    const visibleCount = isExpanded ? projectCards.length : calcVisibleCount();
-    const allFit = projectCards.length <= visibleCount;
-    const baseIndex = calcVisibleCount(); // captura uma vez só, evita delay negativo
+    const baseVisibleCount = calcVisibleCount();
+    const visibleCount = isExpanded ? projectCards.length : baseVisibleCount;
+    const needsButton = projectCards.length > baseVisibleCount;
 
     projectCards.forEach((card, i) => {
       const wasHidden = card.style.display === 'none';
@@ -27,23 +27,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Anima os cards recém-revelados ao expandir
       if (shouldShow && wasHidden && isExpanded) {
-        setTimeout(() => card.classList.add('animate-project-card'), 300 * (i - baseIndex));
+        setTimeout(() => card.classList.add('animate-project-card'), 300 * (i - baseVisibleCount));
       }
 
       if (!shouldShow) card.classList.remove('animate-project-card');
     });
 
     toggleButton.textContent = isExpanded ? 'Mostrar menos' : 'Mostrar mais';
-    toggleButton.style.display = allFit ? 'none' : '';
+    toggleButton.style.display = needsButton ? '' : 'none';
   }
 
   toggleButton.addEventListener('click', () => {
     isExpanded = !isExpanded;
     updateVisibility();
-
-    if (!isExpanded) {
-      setTimeout(() => toggleButton.scrollIntoView({ behavior: 'smooth', block: 'center' }), 300);
-    }
   });
 
   // Recalcula ao redimensionar usando ResizeObserver (mais eficiente que resize event)
