@@ -6,6 +6,8 @@ header {
 }
 
 #info {
+  padding-bottom: 3.062rem;
+
   #about-me {
     display: flex;
     flex-direction: column;
@@ -85,7 +87,10 @@ header {
 }
 
 .container .arrow {
-  padding-block: 5.875rem 3.562rem;
+  margin-top: 5.375rem;
+  padding: 0.5rem;
+  width: fit-content;
+  margin-inline: auto;
   justify-content: center;
   cursor: pointer;
   text-decoration: none;

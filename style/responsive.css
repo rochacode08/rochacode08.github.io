@@ -117,6 +117,10 @@
     background-image: url(../assets/images/background-intro-768.png);
   }
 
+  #info {
+    padding-bottom: 1.5rem;
+  }
+
   #info #about-me {
     & .text-sm {
       padding-bottom: 2rem;
@@ -124,7 +128,8 @@
   }
 
   .container .arrow {
-    padding-block: 3rem 2rem;
+    margin-top: 2.5rem;
+    padding: 0.5rem;
   }
 
   #tags {
