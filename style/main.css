@@ -53,6 +53,7 @@ main {
 
       img {
         width: 100%;
+        height: auto;
         object-fit: cover;
         border-radius: 0.5rem;
         object-position: center;
@@ -63,7 +64,7 @@ main {
 
 .toggle-button {
   background-color: var(--base-gray-300);
-  color: var(--principal-red);
+  color: #F38E95; /* vermelho mais claro para melhor contraste WCAG */
   border: 1px solid var(--principal-red);
   border-radius: 0.5rem;
   padding: 0.75rem 1.5rem;

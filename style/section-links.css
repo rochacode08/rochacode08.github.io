@@ -30,6 +30,10 @@
     row-gap: 1rem;
   }
 
+  .link img {
+    box-sizing: content-box;
+  }
+
   .link {
     background-color: var(--base-gray-300);
     border-radius: 0.5rem;
