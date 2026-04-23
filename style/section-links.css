@@ -1,8 +1,8 @@
 #contacts {
-  background-image: url(../assets/images/background-contacts.png);
+  background-image: url(../assets/images/background-contacts.webp);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-size: 100% 100%;
+  
 
   .contact {
     align-items: center;

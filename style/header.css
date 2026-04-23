@@ -1,8 +1,8 @@
 header {
   padding-top: 7.5rem;
-  background-image: url(../assets/images/background-intro.png);
+  background-image: url(../assets/images/background-intro.webp); 
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 #info {
