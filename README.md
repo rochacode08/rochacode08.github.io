@@ -4,7 +4,7 @@ Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e for
 
 ## 📸 Preview
 
-![Preview do projeto](./assets/images/preview.png)
+![Preview do projeto](./assets/images/preview.webp)
 
 ## 🚀 Demonstração
 
@@ -16,6 +16,7 @@ Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e for
 - **CSS3** — estilização com animações, CSS Grid, Flexbox, CSS Nesting e variáveis
 - **JavaScript (vanilla)** — animações de scroll e sistema de mostrar/esconder projetos
 - **Google Fonts** — tipografia com as fontes *Asap* (títulos), *Maven Pro* (texto) e *Inconsolata* (subtítulos)
+- **WebP** — formato moderno de imagens para melhor performance
 
 ## ✨ Funcionalidades
 
@@ -28,7 +29,7 @@ Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e for
 - ✅ Scroll suave com easing personalizado ao clicar na seta
 
 ### 📁 Seção Projetos
-- ✅ Galeria de **14 projetos** com thumbnails coloridos e links externos
+- ✅ Galeria de **16 projetos** com thumbnails coloridos e links externos
 - ✅ **Sistema "Mostrar mais/menos"** que calcula automaticamente quantos cards cabem em 2 linhas
 - ✅ Recalculo automático da quantidade visível ao **redimensionar a tela** (via `ResizeObserver`)
 - ✅ Cards aparecem progressivamente com `IntersectionObserver` (animação ao entrar na viewport)
@@ -70,21 +71,20 @@ Tema dark com 5 cores de destaque para diferenciar elementos:
 ```
 📦 rochacode08.github.io
  ┣ 📂 assets
- ┃ ┣ 📂 icons               → Ícones SVG (tecnologias, redes sociais, UI)
- ┃ ┗ 📂 images              → Backgrounds, thumbnails e foto de perfil
+ ┃ ┣ 📂 icons                → Ícones SVG (tecnologias, redes sociais, UI)
+ ┃ ┗ 📂 images               → Backgrounds, thumbnails e foto de perfil (WebP)
  ┣ 📂 style
- ┃ ┣ 📜 index.css           → Arquivo principal (importa os demais)
- ┃ ┣ 📜 global.css          → Reset, variáveis e estilos globais
- ┃ ┣ 📜 header.css          → Seção de apresentação
- ┃ ┣ 📜 main.css            → Galeria de projetos e botão mostrar mais
+ ┃ ┣ 📜 global.css           → Reset, variáveis e estilos globais
+ ┃ ┣ 📜 header.css           → Seção de apresentação
+ ┃ ┣ 📜 main.css             → Galeria de projetos e botão mostrar mais
  ┃ ┣ 📜 section-services.css → Seção de serviços
- ┃ ┣ 📜 section-links.css   → Seção de contato
- ┃ ┣ 📜 animations.css      → Animações e keyframes
- ┃ ┗ 📜 responsive.css      → Media queries (6 breakpoints)
+ ┃ ┣ 📜 section-links.css    → Seção de contato
+ ┃ ┣ 📜 animations.css       → Animações e keyframes
+ ┃ ┗ 📜 responsive.css       → Media queries (6 breakpoints)
  ┣ 📂 js
- ┃ ┣ 📜 animations.js       → IntersectionObserver + scroll suave
- ┃ ┗ 📜 viewMore.js         → Lógica do "mostrar mais/menos"
- ┗ 📜 index.html             → Página principal
+ ┃ ┣ 📜 animations.js        → IntersectionObserver + scroll suave
+ ┃ ┗ 📜 viewMore.js          → Lógica do "mostrar mais/menos"
+ ┗ 📜 index.html              → Página principal
 ```
 
 ## 📱 Responsividade
@@ -93,15 +93,36 @@ O projeto conta com **6 breakpoints** para suporte a múltiplos tamanhos de tela
 
 | Dispositivo         | Largura          | Principais ajustes                                  |
 | ------------------- | ---------------- | --------------------------------------------------- |
-| 🖥️ Desktop XL       | acima de 1680px  | Imagem de fundo em maior resolução                  |
-| 💻 Desktop grande   | até 1440px       | Imagem de fundo otimizada para 1024px               |
+| 🖥️ Desktop XL       | acima de 1680px  | Layout em largura máxima                            |
+| 💻 Desktop grande   | até 1440px       | Ajustes de grid e containers                        |
 | 💻 Desktop / Tablet | até 1024px       | Ajustes no container, tags e grid de projetos       |
 | 📱 Tablet           | até 768px        | Tipografia reduzida, cards em colunas menores       |
-| 📱 Mobile           | até 425px        | Imagem de fundo específica, links compactos         |
+| 📱 Mobile           | até 425px        | Links compactos, tipografia fluida com `clamp()`    |
 | 📱 Mobile S         | até 375px        | Cards em coluna única, avatar menor                 |
 | 📱 Mobile XS        | até 320px        | Títulos menores, tags compactas                     |
 
-> 🎯 **Destaque:** cada breakpoint carrega uma **imagem de fundo otimizada** para a resolução correspondente, melhorando a performance em dispositivos móveis.
+## ⚡ Performance
+
+O projeto foi otimizado com foco em Core Web Vitals e auditado pelo **Google Lighthouse**:
+
+### 🖥️ Desktop
+
+![Lighthouse Desktop](./assets/images/lighthouse-desktop.webp)
+
+### 📱 Mobile
+
+![Lighthouse Mobile](./assets/images/lighthouse-mobile.webp)
+
+### 🎯 Otimizações aplicadas
+
+- ✅ **Preload + `fetchpriority="high"`** na foto de perfil (Largest Contentful Paint)
+- ✅ Conversão de imagens **PNG → WebP** (redução significativa no tamanho dos arquivos)
+- ✅ `width` e `height` **explícitos** em todas as imagens (evita Cumulative Layout Shift)
+- ✅ `loading="lazy"` em imagens abaixo do fold (carregamento sob demanda)
+- ✅ Scripts com **`defer`** (carregam em paralelo, não bloqueiam o render)
+- ✅ CSS carregado em **paralelo** (substituindo `@import` em cascata)
+- ✅ Fontes do Google **otimizadas** (apenas os pesos realmente utilizados)
+- ✅ Contraste **WCAG AA** em todos os elementos interativos
 
 ## 💻 Como rodar o projeto
 
@@ -137,8 +158,9 @@ Abra o arquivo `index.html` no navegador — ou utilize a extensão **Live Serve
 - Efeito shine com pseudo-elemento e `background: linear-gradient`
 - Sublinhado animado com `transform: scaleX()`
 - Filtros CSS (`filter: invert sepia saturate hue-rotate`) para colorir SVGs dinamicamente
-- Media queries com múltiplos breakpoints e troca de imagens de fundo
+- Media queries com múltiplos breakpoints
 - Uso de `clamp()` para tipografia fluida em mobile
+- Controle fino de `box-sizing` para compatibilizar atributos HTML com padding CSS
 
 ### 🌐 HTML
 - Estruturação semântica com `<header>`, `<main>`, `<section>`, `<aside>`
@@ -146,10 +168,10 @@ Abra o arquivo `index.html` no navegador — ou utilize a extensão **Live Serve
 - Uso de `aria-label` em links sem texto visível (acessibilidade)
 - `rel="noopener noreferrer"` em links externos (segurança)
 - Favicon com múltiplos tamanhos (32x32 e Apple Touch Icon)
+- Atributos de performance: `preload`, `fetchpriority`, `loading="lazy"`, `defer`
 
 ## 🔮 Melhorias futuras
 
-- [ ] Substituir múltiplas imagens de fundo por uma única solução responsiva (SVG ou CSS)
 - [ ] Adicionar modo **light mode** com toggle
 - [ ] Implementar suporte a múltiplos idiomas (PT-BR / EN)
 - [ ] Adicionar filtro/categorias na seção de projetos (HTML/CSS, JS, React, etc.)
@@ -157,6 +179,7 @@ Abra o arquivo `index.html` no navegador — ou utilize a extensão **Live Serve
 - [ ] Implementar blog/artigos sobre desenvolvimento
 - [ ] Integrar formulário de contato funcional (EmailJS ou similar)
 - [ ] Adicionar `prefers-reduced-motion` para acessibilidade
+- [ ] Alcançar **100/100** no Lighthouse mobile
 
 ## 📝 Licença
 
