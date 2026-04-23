@@ -13,16 +13,31 @@
 
   <title>Portfólio — Gabriel Rocha</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/programmer-logo.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/programmer-logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/programmer-logo.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/programmer-logo.webp">
 
+  <!-- Preload da foto de perfil (LCP) -->
+  <link rel="preload" as="image" href="assets/images/profile-photo.webp" fetchpriority="high">
+
+  <!-- Fontes otimizadas: apenas os pesos realmente usados (600 e 800) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Maven+Pro:wght@400..900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Asap:wght@800&family=Inconsolata:wght@600&family=Maven+Pro:wght@600&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="style/index.css">
+  <!-- CSS carregado em paralelo (em vez de @import em cascata) -->
+  <link rel="stylesheet" href="style/global.css">
+  <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/section-services.css">
+  <link rel="stylesheet" href="style/section-links.css">
+  <link rel="stylesheet" href="style/responsive.css">
+  <link rel="stylesheet" href="style/animations.css">
+
+  <!-- Scripts com defer: baixam em paralelo, executam após o HTML -->
+  <script src="js/animations.js" defer></script>
+  <script src="js/viewMore.js" defer></script>
 </head>
 
 <body>
@@ -31,8 +46,8 @@
       <div id="info">
         <div id="about-me">
           <div id="avatar">
-            <img src="assets/images/profile-photo.png" alt="Foto de perfil">
-            <img src="assets/icons/code.svg" alt="Código de programação">
+            <img src="assets/images/profile-photo.webp" alt="Foto de perfil" width="144" height="144" fetchpriority="high">
+            <img src="assets/icons/code.svg" alt="Código de programação" width="41" height="41">
           </div>
           <p class="subtitle">Hello World! Meu nome é <strong>Gabriel Rocha</strong> e sou</p>
           <h1>Desenvolvedor Fullstack</h1>
@@ -44,41 +59,41 @@
 
         <div id="tags">
           <div class="tag flex">
-            <img src="assets/icons/git-bash.svg" alt="Símbolo do Git Bash">
+            <img src="assets/icons/git-bash.svg" alt="Símbolo do Git Bash" width="48" height="48">
             <span class="text-md">Git Bash</span>
           </div>
           <div class="tag flex">
-            <img src="assets/icons/github.svg" alt="Símbolo do GitHub">
+            <img src="assets/icons/github.svg" alt="Símbolo do GitHub" width="48" height="48">
             <span class="text-md">GitHub</span>
           </div>
           <div class="tag flex">
-            <img src="assets/icons/html.svg" alt="Símbolo do HTML">
+            <img src="assets/icons/html.svg" alt="Símbolo do HTML" width="48" height="48">
             <span class="text-md">HTML</span>
           </div>
           <div class="tag flex">
-            <img src="assets/icons/css.svg" alt="Símbolo do CSS">
+            <img src="assets/icons/css.svg" alt="Símbolo do CSS" width="48" height="48">
             <span class="text-md">CSS</span>
           </div>
           <div class="tag flex">
-            <img src="assets/icons/javascript.svg" alt="Símbolo do JavaScript">
+            <img src="assets/icons/javascript.svg" alt="Símbolo do JavaScript" width="48" height="48">
             <span class="text-md">JavaScript</span>
           </div>
           <div class="tag flex">
-            <img src="assets/icons/mysql.svg" alt="Símbolo do MySQL">
+            <img src="assets/icons/mysql.svg" alt="Símbolo do MySQL" width="48" height="48">
             <span class="text-md">MySQL</span>
           </div>
           <div class="tag flex">
-            <img src="assets/icons/react.svg" alt="Símbolo do React">
+            <img src="assets/icons/react.svg" alt="Símbolo do React" width="48" height="48">
             <span class="text-md">React</span>
           </div>
           <div class="tag flex">
-            <img src="assets/icons/nodejs.svg" alt="Símbolo do Node.js">
+            <img src="assets/icons/nodejs.svg" alt="Símbolo do Node.js" width="48" height="48">
             <span class="text-md">Node.js</span>
           </div>
         </div>
 
         <a href="#my-projects" class="flex arrow" aria-label="Ir para os projetos">
-          <img src="assets/icons/caret-double-down.svg" alt="Duas setas para baixo">
+          <img src="assets/icons/caret-double-down.svg" alt="Duas setas para baixo" width="24" height="24">
         </a>
       </div>
     </div>
@@ -93,111 +108,111 @@
 
       <div id="projects" class="grid">
         <a href="https://rochacode08.github.io/g915x-landing/" target="_blank" rel="noopener noreferrer" class="project-card">
-          <img src="assets/images/thumbnail-project-16.png" alt="Thumbnail Project 16">
+          <img src="assets/images/thumbnail-project-16.webp" alt="Thumbnail Project 16" width="400" height="225" loading="lazy">
           <h3>g915x-landing</h3>
           <p class="text-sm">Página premium e animada focada na conversão para o teclado Logitech G915X.</p>
         </a>
 
         <a href="https://rochacode08.github.io/Lp-patins-animada/" target="_blank" rel="noopener noreferrer"
           class="project-card">
-          <img src="assets/images/thumbnail-project-08.png" alt="Thumbnail Sniptap">
+          <img src="assets/images/thumbnail-project-08.webp" alt="Thumbnail Sniptap" width="400" height="225" loading="lazy">
           <h3>Sniptap</h3>
           <p class="text-sm">Plataforma vibrante e interativa desenvolvida para venda de patins.</p>
         </a>
 
         <a href="https://rochacode08.github.io/bolosCris/" target="_blank" rel="noopener noreferrer"
           class="project-card">
-          <img src="assets/images/thumbnail-project-14.png" alt="Thumbnail Bolos Cris">
+          <img src="assets/images/thumbnail-project-14.webp" alt="Thumbnail Bolos Cris" width="400" height="225" loading="lazy">
           <h3>Bolos Cris</h3>
           <p class="text-sm">Vitrine de bolos artesanais com assistente de IA para atendimento.</p>
         </a>
 
         <a href="https://rochacode08.github.io/Zingen/" target="_blank" rel="noopener noreferrer" class="project-card">
-          <img src="assets/images/thumbnail-project-10.svg" alt="Thumbnail Zingen">
+          <img src="assets/images/thumbnail-project-10.svg" alt="Thumbnail Zingen" width="400" height="225" loading="lazy">
           <h3>Zingen</h3>
           <p class="text-sm">Apresentação moderna e fluida para um aplicativo mobile de karaokê.</p>
         </a>
 
         <a href="https://rochacode08.github.io/Festivite/" target="_blank" rel="noopener noreferrer"
           class="project-card">
-          <img src="assets/images/thumbnail-project-11.png" alt="Thumbnail Festivite">
+          <img src="assets/images/thumbnail-project-11.webp" alt="Thumbnail Festivite" width="400" height="225" loading="lazy">
           <h3>Festivite</h3>
           <p class="text-sm">Layout elegante para divulgação de eventos e organização de festas.</p>
         </a>
 
         <a href="https://github.com/rochacode08/NLW-app-metas" target="_blank" rel="noopener noreferrer"
           class="project-card">
-          <img src="assets/images/thumbnail-project-07.png" alt="Thumbnail NLW Pocket JS">
+          <img src="assets/images/thumbnail-project-07.webp" alt="Thumbnail NLW Pocket JS" width="400" height="225" loading="lazy">
           <h3>NLW Pocket JS</h3>
           <p class="text-sm">App fullstack para acompanhamento de metas (NLW Pocket).</p>
         </a>
 
         <a href="https://rochacode08.github.io/NLW-Agents/" target="_blank" rel="noopener noreferrer"
           class="project-card">
-          <img src="assets/images/thumbnail-project-15.png" alt="Thumbnail NLW Agents">
+          <img src="assets/images/thumbnail-project-15.webp" alt="Thumbnail NLW Agents" width="400" height="225" loading="lazy">
           <h3>NLW Agents</h3>
           <p class="text-sm">Sistema interativo focado em integração com agentes de IA (NLW).</p>
         </a>
 
         <a href="https://rochacode08.github.io/Tech-news/" target="_blank" rel="noopener noreferrer"
           class="project-card">
-          <img src="assets/images/thumbnail-project-06.svg" alt="Thumbnail Tech News">
+          <img src="assets/images/thumbnail-project-06.svg" alt="Thumbnail Tech News" width="400" height="225" loading="lazy">
           <h3>Tech news</h3>
           <p class="text-sm">Interface focada em grid e tipografia para portais de notícias de tecnologia.</p>
         </a>
 
         <a href="https://rochacode08.github.io/form-matricula/" target="_blank" rel="noopener noreferrer"
           class="project-card">
-          <img src="assets/images/thumbnail-project-12.png" alt="Thumbnail Estrelas do Amanhã">
+          <img src="assets/images/thumbnail-project-12.webp" alt="Thumbnail Estrelas do Amanhã" width="400" height="225" loading="lazy">
           <h3>Estrelas do amanhã</h3>
           <p class="text-sm">Formulário de matrícula interativo com validações focadas na experiência do usuário.</p>
         </a>
 
         <a href="https://rochacode08.github.io/convert.js/" target="_blank" rel="noopener noreferrer"
           class="project-card">
-          <img src="assets/images/thumbnail-project-13.png" alt="Thumbnail Convert">
+          <img src="assets/images/thumbnail-project-13.webp" alt="Thumbnail Convert" width="400" height="225" loading="lazy">
           <h3>Convert</h3>
           <p class="text-sm">Aplicação utilitária para cálculos e conversões para praticar JavaScript.</p>
         </a>
 
         <a href="https://rochacode08.github.io/Travelgram/" target="_blank" rel="noopener noreferrer"
           class="project-card">
-          <img src="assets/images/thumbnail-project-03.svg" alt="Thumbnail Travelgram">
+          <img src="assets/images/thumbnail-project-03.svg" alt="Thumbnail Travelgram" width="400" height="225" loading="lazy">
           <h3>Travelgram</h3>
           <p class="text-sm">Interface de feed fotográfico inspirada em redes sociais de viajantes.</p>
         </a>
 
         <a href="https://rochacode08.github.io/LandingPage-GTA/" target="_blank" rel="noopener noreferrer"
           class="project-card">
-          <img src="assets/images/gta.png" alt="Thumbnail Landing Page GTA V">
+          <img src="assets/images/gta.webp" alt="Thumbnail Landing Page GTA V" width="400" height="225" loading="lazy">
           <h3>Landing page GTA V</h3>
           <p class="text-sm">Página promocional imersiva com elementos gráficos do game GTA V.</p>
         </a>
 
         <a href="https://rochacode08.github.io/Cupcake-de-cafe-com-chantilly/" target="_blank" rel="noopener noreferrer"
           class="project-card">
-          <img src="assets/images/thumbnail-project-04.svg" alt="Thumbnail Página de receita">
+          <img src="assets/images/thumbnail-project-04.svg" alt="Thumbnail Página de receita" width="400" height="225" loading="lazy">
           <h3>Página de receita</h3>
           <p class="text-sm">Layout limpo e bem estruturado para guias culinários passo a passo.</p>
         </a>
 
         <a href="https://rochacode08.github.io/Santorini-Grecia/" target="_blank" rel="noopener noreferrer"
           class="project-card">
-          <img src="assets/images/thumbnail-project-02.png" alt="Thumbnail Descubra Santorini">
+          <img src="assets/images/thumbnail-project-02.webp" alt="Thumbnail Descubra Santorini" width="400" height="225" loading="lazy">
           <h3>Descubra Santorini</h3>
           <p class="text-sm">Página de exploração turística com foco em tipografia clássica e belas fotografias.</p>
         </a>
 
         <a href="https://rochacode08.github.io/culinaria-br/" target="_blank" rel="noopener noreferrer"
           class="project-card">
-          <img src="assets/images/thumbnail-project-05.png" alt="Thumbnail Comida Brasileira">
+          <img src="assets/images/thumbnail-project-05.webp" alt="Thumbnail Comida Brasileira" width="400" height="225" loading="lazy">
           <h3>Comida brasileira</h3>
           <p class="text-sm">Apresentação visual rica dedicada à gastronomia tradicional nacional.</p>
         </a>
 
         <a href="https://rochacode08.github.io/new-year-indie/" target="_blank" rel="noopener noreferrer"
           class="project-card">
-          <img src="assets/images/thumbnail-project-09.png" alt="Thumbnail Indie New Year">
+          <img src="assets/images/thumbnail-project-09.webp" alt="Thumbnail Indie New Year" width="400" height="225" loading="lazy">
           <h3>Indie New Year</h3>
           <p class="text-sm">Vitrine festiva de final de ano projetada para a loja EspaçoIndie.</p>
         </a>
@@ -218,19 +233,19 @@
 
       <div class="grid">
         <div class="card">
-          <img src="assets/icons/devices.svg" alt="Ícone de dispositivos">
+          <img src="assets/icons/devices.svg" alt="Ícone de dispositivos" width="48" height="48" loading="lazy">
           <h3>Websites e aplicativos</h3>
           <p class="text-sm">Desenvolvimento de interfaces modernas e responsivas</p>
         </div>
 
         <div class="card">
-          <img src="assets/icons/hard-drives.svg" alt="Ícone de banco de dados">
+          <img src="assets/icons/hard-drives.svg" alt="Ícone de banco de dados" width="48" height="48" loading="lazy">
           <h3>API e banco de dados</h3>
           <p class="text-sm">Criação de serviços e estruturas de dados robustas</p>
         </div>
 
         <div class="card">
-          <img src="assets/icons/infinity.svg" alt="Ícone de infinito">
+          <img src="assets/icons/infinity.svg" alt="Ícone de infinito" width="48" height="48" loading="lazy">
           <h3>DevOps</h3>
           <p class="text-sm">Gestão e infraestrutura da aplicação</p>
         </div>
@@ -249,36 +264,33 @@
       <div id="links" class="grid">
         <a href="https://www.linkedin.com/in/gabriel-rocha-devstack" target="_blank" rel="noopener noreferrer"
           class="link flex" aria-label="Abrir LinkedIn">
-          <img src="assets/icons/linkedin-logo.svg" alt="">
+          <img src="assets/icons/linkedin-logo.svg" alt="" width="24" height="24">
           <span>LinkedIn</span>
-          <img src="assets/icons/arrow-up-right.svg" alt="">
+          <img src="assets/icons/arrow-up-right.svg" alt="" width="24" height="24">
         </a>
 
         <a href="https://www.instagram.com/gabriel_lopess15?igsh=dmI0cXRtbGhvZmF0" target="_blank"
           rel="noopener noreferrer" class="link flex" aria-label="Abrir Instagram">
-          <img src="assets/icons/instagram-logo.svg" alt="">
+          <img src="assets/icons/instagram-logo.svg" alt="" width="24" height="24">
           <span>Instagram</span>
-          <img src="assets/icons/arrow-up-right.svg" alt="">
+          <img src="assets/icons/arrow-up-right.svg" alt="" width="24" height="24">
         </a>
 
         <a href="https://github.com/rochacode08" target="_blank" rel="noopener noreferrer" class="link flex"
           aria-label="Abrir GitHub">
-          <img src="assets/icons/github-logo.svg" alt="">
+          <img src="assets/icons/github-logo.svg" alt="" width="24" height="24">
           <span>GitHub</span>
-          <img src="assets/icons/arrow-up-right.svg" alt="">
+          <img src="assets/icons/arrow-up-right.svg" alt="" width="24" height="24">
         </a>
 
         <a href="mailto:gabrielrocha.devstack@gmail.com" class="link flex" aria-label="Enviar e-mail">
-          <img src="assets/icons/envelope-simple.svg" alt="">
+          <img src="assets/icons/envelope-simple.svg" alt="" width="24" height="24">
           <span>E-mail</span>
-          <img src="assets/icons/arrow-up-right.svg" alt="">
+          <img src="assets/icons/arrow-up-right.svg" alt="" width="24" height="24">
         </a>
       </div>
     </div>
   </section>
-
-  <script src="js/animations.js"></script>
-  <script src="js/viewMore.js"></script>
 </body>
 
 </html>
