@@ -46,6 +46,8 @@
 #tags .tag:nth-child(6) { animation-delay: 2.2s; }
 #tags .tag:nth-child(7) { animation-delay: 2.4s; }
 #tags .tag:nth-child(8) { animation-delay: 2.6s; }
+#tags .tag:nth-child(9) { animation-delay: 2.8s; }
+#tags .tag:nth-child(10){ animation-delay: 3.0s; }
 
 .arrow {
   opacity: 0;
