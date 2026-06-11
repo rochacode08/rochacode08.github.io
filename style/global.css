@@ -70,3 +70,10 @@ h1, h2, h3 {
 .container {
   padding-inline: 10.19rem;
 }
+/* Foco visível para navegação por teclado (Tab) — não afeta cliques de mouse */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--principal-blue);
+  outline-offset: 3px;
+  border-radius: 0.25rem;
+}
