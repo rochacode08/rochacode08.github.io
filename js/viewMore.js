@@ -48,16 +48,19 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!shouldShow) card.classList.remove('animate-project-card');
     });
 
-    toggleButton.textContent = isExpanded ? 'Mostrar menos' : 'Mostrar mais';
+    const t = window.t || ((key) => key);
+    toggleButton.textContent = isExpanded ? t('show_less') : t('show_more');
     toggleButton.style.display = needsButton ? '' : 'none';
   }
+
+  document.addEventListener('langchange', updateVisibility);
 
   filterButtons.forEach((button) => {
     button.addEventListener('click', () => {
       if (button.dataset.filter === activeFilter) return;
 
       activeFilter = button.dataset.filter;
-      isExpanded = false; 
+      isExpanded = false;
 
       filterButtons.forEach((b) => {
         const isActive = b === button;
@@ -74,7 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
     updateVisibility();
   });
 
-  // Recalcula ao redimensionar usando ResizeObserver (mais eficiente que resize event)
   new ResizeObserver(updateVisibility).observe(projectsGrid);
 
   updateVisibility();

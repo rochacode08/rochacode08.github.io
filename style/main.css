@@ -23,7 +23,7 @@ main {
       background-color: transparent;
       color: var(--base-gray-400);
       border: 1px solid var(--base-gray-300);
-      border-radius: 62.43rem; /* mesmo raio das tags do header */
+      border-radius: 62.43rem;
       padding: 0.5rem 1.25rem;
       font: var(--text-sm);
       cursor: pointer;
@@ -49,19 +49,18 @@ main {
     gap: 1.5rem;
     padding-bottom: 4rem;
 
-    /* g915x-landing */     .project-card:nth-child(1)  img { border: 0.75rem solid var(--principal-blue);   border-bottom: none; }
-    /* Sniptap */           .project-card:nth-child(2)  img { border: 0.75rem solid var(--principal-blue);   border-bottom: none; }
-    /* Bolos Cris */        .project-card:nth-child(3)  img { border: 0.75rem solid var(--principal-purple); border-bottom: none; }
-    /* Festivite */         .project-card:nth-child(5)  img { border: 0.75rem solid var(--principal-purple); border-bottom: none; }
-    /* NLW Pocket */        .project-card:nth-child(6)  img { border: 0.75rem solid var(--principal-yellow); border-bottom: none; }
-    /* NLW Agents */        .project-card:nth-child(7)  img { border: 0.75rem solid var(--principal-purple); border-bottom: none; }
-    /* Estrelas do Amanhã */.project-card:nth-child(9)  img { border: 0.75rem solid var(--principal-red);    border-bottom: none; }
-    /* Convert */           .project-card:nth-child(10) img { border: 0.75rem solid var(--principal-blue);   border-bottom: none; }
-    /* GTA */               .project-card:nth-child(12) img { border: 0.75rem solid var(--principal-yellow); border-bottom: none; }
-    /* Santorini */         .project-card:nth-child(14) img { border: 0.75rem solid var(--principal-blue);   border-bottom: none; }
-    /* Comida Brasileira */ .project-card:nth-child(15) img { border: 0.75rem solid var(--principal-red);    border-bottom: none; }
-    /* Indie New Year */    .project-card:nth-child(16) img { border: 0.75rem solid var(--principal-yellow); border-bottom: none; }
-    
+    .project-card:nth-child(1)  img { border: 0.75rem solid var(--principal-blue);   border-bottom: none; }
+    .project-card:nth-child(2)  img { border: 0.75rem solid var(--principal-blue);   border-bottom: none; }
+    .project-card:nth-child(3)  img { border: 0.75rem solid var(--principal-purple); border-bottom: none; }
+    .project-card:nth-child(5)  img { border: 0.75rem solid var(--principal-purple); border-bottom: none; }
+    .project-card:nth-child(6)  img { border: 0.75rem solid var(--principal-yellow); border-bottom: none; }
+    .project-card:nth-child(7)  img { border: 0.75rem solid var(--principal-purple); border-bottom: none; }
+    .project-card:nth-child(9)  img { border: 0.75rem solid var(--principal-red);    border-bottom: none; }
+    .project-card:nth-child(10) img { border: 0.75rem solid var(--principal-blue);   border-bottom: none; }
+    .project-card:nth-child(12) img { border: 0.75rem solid var(--principal-yellow); border-bottom: none; }
+    .project-card:nth-child(14) img { border: 0.75rem solid var(--principal-blue);   border-bottom: none; }
+    .project-card:nth-child(15) img { border: 0.75rem solid var(--principal-red);    border-bottom: none; }
+    .project-card:nth-child(16) img { border: 0.75rem solid var(--principal-yellow); border-bottom: none; }
 
     .project-card {
       background-color: var(--base-gray-300);
@@ -95,7 +94,7 @@ main {
 
 .toggle-button {
   background-color: var(--base-gray-300);
-  color: #F38E95; /* vermelho mais claro para melhor contraste WCAG */
+  color: #F38E95;
   border: 1px solid var(--principal-red);
   border-radius: 0.5rem;
   padding: 0.75rem 1.5rem;

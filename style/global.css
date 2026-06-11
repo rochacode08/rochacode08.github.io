@@ -13,7 +13,7 @@
   --base-gray-600: #E2E4E9;
 
   --principal-red: #E3646E;
-  --principal-purple: #BB72E9;
+  --principal-purple: #7C3AED;
   --principal-blue: #3996DB;
   --principal-green: #82BC4F;
   --principal-yellow: #EABD5F;
@@ -59,6 +59,19 @@ h1, h2, h3 {
   color: var(--base-gray-400);
 }
 
+#particles-js {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+[data-theme="light"] #particles-js {
+  opacity: 1;
+}
+
 .flex {
   display: flex;
 }
@@ -70,7 +83,6 @@ h1, h2, h3 {
 .container {
   padding-inline: 10.19rem;
 }
-/* Foco visível para navegação por teclado (Tab) — não afeta cliques de mouse */
 a:focus-visible,
 button:focus-visible {
   outline: 2px solid var(--principal-blue);

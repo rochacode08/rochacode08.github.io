@@ -1,9 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // ── IntersectionObserver: muito mais eficiente que scroll + getBoundingClientRect ──
-
   const observerOptions = { threshold: 0.1 };
 
-  // ── Project cards ──────────────────────────────────────────────
   const projectCards = document.querySelectorAll('#projects .project-card');
 
   const projectObserver = new IntersectionObserver((entries) => {
@@ -19,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectsSection = document.getElementById('projects');
   if (projectsSection) projectObserver.observe(projectsSection);
 
-  // ── Service cards ──────────────────────────────────────────────
   const serviceCards = document.querySelectorAll('#services .card');
 
   const serviceObserver = new IntersectionObserver((entries) => {
@@ -35,8 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const servicesSection = document.getElementById('services');
   if (servicesSection) serviceObserver.observe(servicesSection);
 
-  // ── Scroll suave com duração controlada ────────────────────────
-  // Usuários com "reduzir animações" ativado no sistema pulam direto
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   function smoothScrollTo(targetY) {
@@ -47,10 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const start = window.scrollY;
     const distance = targetY - start;
-    const duration = 1200; // ms — aumente para descer mais devagar
+    const duration = 1200;
     let startTime = null;
 
-    // Easing easeInOutCubic: começa devagar, acelera, desacelera no fim
     function easeInOutCubic(t) {
       return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
     }
@@ -68,7 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(step);
   }
 
-  // Seta do header → seção de projetos
   const arrow = document.querySelector('.arrow');
   const target = document.getElementById('my-projects');
 

@@ -19,7 +19,6 @@
   }
 }
 
-/* Tablets e telas menores */
 @media (max-width: 1024px) {
   .container {
     padding-inline: 2rem;
@@ -46,7 +45,6 @@
     padding-inline: 1rem;
   }
 
-  /* Projects Section */
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
@@ -57,14 +55,12 @@
     }
   }
 
-  /* Services Section */
   section#services .grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding-block: 2rem 5rem;
   }
 }
 
-/* Mobile devices */
 @media (max-width: 768px) {
   :root {
     --h1: 800 2.5rem/120% var(--font-family-title);
@@ -107,7 +103,6 @@
     }
   }
 
-  /* Projects Section */
   main #my-projects {
     padding-block: 3rem 2rem;
   }
@@ -126,7 +121,6 @@
     padding-bottom: 5rem;
   }
 
-  /* Services Section */
   section#services {
     & #my-services {
       padding-block: 3rem 2rem;
@@ -142,12 +136,25 @@
     }
   }
 
-  /* Contacts Section */
   #contacts {
     & .contact {
       padding-block: 4rem 2rem;
       text-align: center;
     }
+  }
+
+  #site-controls {
+    top: 0.75rem;
+    right: 0.75rem;
+
+    & button {
+      width: 2.25rem;
+      height: 2.25rem;
+    }
+  }
+
+  #contact-form {
+    padding-inline: 1rem;
   }
 
   #links {
@@ -170,7 +177,6 @@
 }
 
 @media (max-width: 425px) {
-
   #links {
     max-width: 100%;
     padding-inline: 1rem;
@@ -194,7 +200,6 @@
   }
 }
 
-/* Small mobile devices */
 @media (max-width: 375px) {
   :root {
     --h1: 800 2rem/120% var(--font-family-title);
@@ -234,24 +239,19 @@
 }
 
 @media (max-width: 320px) {
-
-  /* Reduzimos ainda mais os títulos principais */
   :root {
     --h1: 800 1.75rem/120% var(--font-family-title);
     --h2: 800 1.25rem/120% var(--font-family-title);
   }
 
-
   p.subtitle {
     text-align: center;
   }
 
-  /* Reduzimos as margens laterais para ganhar espaço útil */
   .container {
     padding-inline: 0.5rem;
   }
 
-  /* Diminuímos o espaçamento e a fonte das tags para não quebrarem a tela */
   #tags {
     gap: 0.25rem;
   }
