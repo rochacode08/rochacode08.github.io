@@ -1,6 +1,6 @@
 # 🗂️ Portfólio — Gabriel Rocha
 
-Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e formas de contato. A página é dividida em quatro seções principais: apresentação com stack de tecnologias, galeria de projetos com sistema "mostrar mais/menos", serviços oferecidos e links de contato.
+Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e formas de contato. A página é dividida em quatro seções principais: apresentação com stack de tecnologias, galeria de projetos com filtros e sistema "mostrar mais/menos", serviços oferecidos e seção de contato com formulário funcional.
 
 ## 📸 Preview
 
@@ -14,7 +14,9 @@ Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e for
 
 - **HTML5** — estruturação semântica com `<header>`, `<main>`, `<section>` e meta tags Open Graph
 - **CSS3** — estilização com animações, CSS Grid, Flexbox, CSS Nesting e variáveis
-- **JavaScript (vanilla)** — animações de scroll e sistema de mostrar/esconder projetos
+- **JavaScript (vanilla)** — lógica de tema, idioma, animações, formulário e partículas
+- **particles.js** — background animado com partículas (modo claro)
+- **FormSubmit** — envio de formulário de contato sem back-end
 - **Google Fonts** — tipografia com as fontes *Asap* (títulos), *Maven Pro* (texto) e *Inconsolata* (subtítulos)
 - **WebP** — formato moderno de imagens para melhor performance
 
@@ -23,13 +25,14 @@ Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e for
 ### 🎭 Seção Apresentação
 - ✅ Foto de perfil com ícone de código sobreposto
 - ✅ Texto de apresentação com **animações sequenciais de entrada** (fadeIn com delays)
-- ✅ **Stack de tecnologias** em formato de tags (Git Bash, GitHub, HTML, CSS, JavaScript, MySQL, React, Node.js)
+- ✅ **Stack de tecnologias** em formato de tags (React, TypeScript, JavaScript, Node.js, Tailwind, HTML, CSS, MySQL, GitHub, Git Bash)
 - ✅ Tags com animação de entrada deslizante (slide-in) em cascata
 - ✅ Botão de seta com **animação de bounce** indicando scroll para projetos
 - ✅ Scroll suave com easing personalizado ao clicar na seta
 
 ### 📁 Seção Projetos
 - ✅ Galeria de **16 projetos** com thumbnails coloridos e links externos
+- ✅ **Filtros por categoria**: Todos / HTML & CSS / JavaScript / Fullstack & IA
 - ✅ **Sistema "Mostrar mais/menos"** que calcula automaticamente quantos cards cabem em 2 linhas
 - ✅ Recalculo automático da quantidade visível ao **redimensionar a tela** (via `ResizeObserver`)
 - ✅ Cards aparecem progressivamente com `IntersectionObserver` (animação ao entrar na viewport)
@@ -47,24 +50,60 @@ Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e for
 - ✅ 4 links para redes sociais e contato (LinkedIn, Instagram, GitHub, E-mail)
 - ✅ Efeito hover com deslocamento horizontal e mudança de cor nos ícones
 - ✅ Sublinhado animado na parte inferior do link
+- ✅ **Formulário de contato funcional** via FormSubmit (sem back-end)
+
+### 🌗 Tema claro / escuro
+- ✅ **Toggle entre dark mode e light mode** com salvamento no `localStorage`
+- ✅ Background animado com **particles.js** no modo claro (partículas azuis em movimento)
+- ✅ Lógica de elevação: cards brancos sobre superfícies cinzas no modo claro
+- ✅ `theme-color` meta dinâmico para a barra do browser em mobile
+- ✅ Transições suaves entre os temas
+
+### 🌐 Internacionalização
+- ✅ Suporte a **PT-BR e EN** com toggle e salvamento no `localStorage`
+- ✅ Todos os textos, placeholders e labels do formulário traduzidos
+- ✅ Atributo `lang` do HTML atualizado dinamicamente para leitores de tela
+
+### ♿ Acessibilidade
+- ✅ `prefers-reduced-motion` — animações desativadas para quem usa essa preferência no sistema
+- ✅ `aria-label` em todos os elementos interativos sem texto visível
+- ✅ Foco visível via teclado (`:focus-visible`) em links e botões
+- ✅ `aria-pressed` e `role="group"` nos filtros de projeto
+- ✅ `aria-live="polite"` no status do formulário de contato
 
 ## 🎨 Paleta de cores
 
-Tema dark com 5 cores de destaque para diferenciar elementos:
+### 🌑 Dark mode (padrão)
 
-| Cor                    | Hex       |
-| ---------------------- | --------- |
-| ⬛ Base 100 (bg)        | `#0D0E11` |
-| ⬛ Base 200             | `#16181D` |
-| 🔲 Base 300             | `#292C34` |
-| 🔘 Base 400             | `#878EA1` |
-| ⚪ Base 500             | `#C0C4CE` |
-| ⚪ Base 600             | `#E2E4E9` |
-| 🔴 Principal Red        | `#E3646E` |
-| 🟣 Principal Purple     | `#BB72E9` |
-| 🔵 Principal Blue       | `#3996DB` |
-| 🟢 Principal Green      | `#82BC4F` |
-| 🟡 Principal Yellow     | `#EABD5F` |
+| Cor                 | Hex       |
+| ------------------- | --------- |
+| ⬛ Base 100 (bg)     | `#0D0E11` |
+| ⬛ Base 200          | `#16181D` |
+| 🔲 Base 300          | `#292C34` |
+| 🔘 Base 400          | `#878EA1` |
+| ⚪ Base 500          | `#C0C4CE` |
+| ⚪ Base 600          | `#E2E4E9` |
+| 🔴 Red              | `#E3646E` |
+| 🟣 Purple           | `#7C3AED` |
+| 🔵 Blue             | `#3996DB` |
+| 🟢 Green            | `#82BC4F` |
+| 🟡 Yellow           | `#EABD5F` |
+
+### ☀️ Light mode
+
+| Cor                 | Hex       |
+| ------------------- | --------- |
+| 🔘 Base 100 (fundo) | `#E8EAEE` |
+| ⚪ Base 200          | `#F1F3F6` |
+| ⚪ Base 300 (cards)  | `#FFFFFF` |
+| 🔘 Base 400          | `#6B7079` |
+| ⬛ Base 500          | `#3C414A` |
+| ⬛ Base 600          | `#16181D` |
+| 🔴 Red              | `#D24C5A` |
+| 🟣 Purple           | `#7C3AED` |
+| 🔵 Blue             | `#2C7FC4` |
+| 🟢 Green            | `#6FAE3E` |
+| 🟡 Yellow           | `#D29A33` |
 
 ## 📂 Estrutura do projeto
 
@@ -75,15 +114,20 @@ Tema dark com 5 cores de destaque para diferenciar elementos:
  ┃ ┗ 📂 images               → Backgrounds, thumbnails e foto de perfil (WebP)
  ┣ 📂 style
  ┃ ┣ 📜 global.css           → Reset, variáveis e estilos globais
+ ┃ ┣ 📜 themes.css           → Tema claro/escuro + controles de tema/idioma
  ┃ ┣ 📜 header.css           → Seção de apresentação
  ┃ ┣ 📜 main.css             → Galeria de projetos e botão mostrar mais
  ┃ ┣ 📜 section-services.css → Seção de serviços
- ┃ ┣ 📜 section-links.css    → Seção de contato
+ ┃ ┣ 📜 section-links.css    → Seção de contato e formulário
  ┃ ┣ 📜 animations.css       → Animações e keyframes
  ┃ ┗ 📜 responsive.css       → Media queries (6 breakpoints)
  ┣ 📂 js
+ ┃ ┣ 📜 i18n.js              → Sistema de internacionalização PT-BR / EN
+ ┃ ┣ 📜 theme.js             → Toggle de tema claro/escuro
+ ┃ ┣ 📜 particles.js         → Background de partículas (modo claro)
  ┃ ┣ 📜 animations.js        → IntersectionObserver + scroll suave
- ┃ ┗ 📜 viewMore.js          → Lógica do "mostrar mais/menos"
+ ┃ ┣ 📜 viewMore.js          → Lógica do "mostrar mais/menos" e filtros
+ ┃ ┗ 📜 contactForm.js       → Envio do formulário via FormSubmit
  ┗ 📜 index.html              → Página principal
 ```
 
@@ -93,8 +137,6 @@ O projeto conta com **6 breakpoints** para suporte a múltiplos tamanhos de tela
 
 | Dispositivo         | Largura          | Principais ajustes                                  |
 | ------------------- | ---------------- | --------------------------------------------------- |
-| 🖥️ Desktop XL       | acima de 1680px  | Layout em largura máxima                            |
-| 💻 Desktop grande   | até 1440px       | Ajustes de grid e containers                        |
 | 💻 Desktop / Tablet | até 1024px       | Ajustes no container, tags e grid de projetos       |
 | 📱 Tablet           | até 768px        | Tipografia reduzida, cards em colunas menores       |
 | 📱 Mobile           | até 425px        | Links compactos, tipografia fluida com `clamp()`    |
@@ -122,7 +164,7 @@ O projeto foi otimizado com foco em Core Web Vitals e auditado pelo **Google Lig
 - ✅ Scripts com **`defer`** (carregam em paralelo, não bloqueiam o render)
 - ✅ CSS carregado em **paralelo** (substituindo `@import` em cascata)
 - ✅ Fontes do Google **otimizadas** (apenas os pesos realmente utilizados)
-- ✅ Contraste **WCAG AA** em todos os elementos interativos
+- ✅ Tema aplicado antes do primeiro render (sem flash de tema errado)
 
 ## 💻 Como rodar o projeto
 
@@ -145,40 +187,41 @@ Abra o arquivo `index.html` no navegador — ou utilize a extensão **Live Serve
 ### ⚡ JavaScript
 - **IntersectionObserver API** para animar elementos ao entrarem na viewport
 - **ResizeObserver API** para recalcular layouts dinamicamente
+- **MutationObserver** para detectar mudanças de tema e sincronizar o particles.js
 - **Scroll suave customizado** com `requestAnimationFrame` e easing `easeInOutCubic`
+- Sistema de internacionalização com dicionário e `localStorage`
+- Toggle de tema com persistência e atualização de `theme-color` meta
 - Cálculo dinâmico de quantos cards cabem em 2 linhas do grid
-- Controle de estado com variável `isExpanded` para toggle
-- Manipulação avançada do DOM e classes
+- Filtros de categoria com controle de estado e animação de entrada
 
 ### 🎨 CSS
 - **CSS Nesting** nativo em todos os arquivos
-- Uso extensivo de **CSS Custom Properties** (variáveis) para cores, fontes e typography scale
+- **Dual theming** com CSS Custom Properties e seletor `[data-theme="light"]`
+- Lógica de elevação: superfícies mais claras que o fundo no tema claro
 - **Animações complexas** com `@keyframes` (fadeIn, slideIn, bounce, pulse, shine)
 - Animações com **delays em cascata** usando `nth-child`
 - Efeito shine com pseudo-elemento e `background: linear-gradient`
-- Sublinhado animado com `transform: scaleX()`
 - Filtros CSS (`filter: invert sepia saturate hue-rotate`) para colorir SVGs dinamicamente
-- Media queries com múltiplos breakpoints
+- `prefers-reduced-motion` para desativar animações via preferência do sistema
 - Uso de `clamp()` para tipografia fluida em mobile
-- Controle fino de `box-sizing` para compatibilizar atributos HTML com padding CSS
 
 ### 🌐 HTML
-- Estruturação semântica com `<header>`, `<main>`, `<section>`, `<aside>`
+- Estruturação semântica com `<header>`, `<main>`, `<section>`
 - Meta tags **Open Graph** para compartilhamento em redes sociais
-- Uso de `aria-label` em links sem texto visível (acessibilidade)
+- Atributos `data-i18n` e `data-i18n-placeholder` para internacionalização
+- `aria-label`, `aria-pressed`, `aria-live`, `role` para acessibilidade
 - `rel="noopener noreferrer"` em links externos (segurança)
 - Favicon com múltiplos tamanhos (32x32 e Apple Touch Icon)
-- Atributos de performance: `preload`, `fetchpriority`, `loading="lazy"`, `defer`
 
 ## 🔮 Melhorias futuras
 
-- [ ] Adicionar modo **light mode** com toggle
-- [ ] Implementar suporte a múltiplos idiomas (PT-BR / EN)
-- [ ] Adicionar filtro/categorias na seção de projetos (HTML/CSS, JS, React, etc.)
+- [x] Adicionar modo **light mode** com toggle
+- [x] Implementar suporte a múltiplos idiomas (PT-BR / EN)
+- [x] Adicionar filtro/categorias na seção de projetos (HTML/CSS, JS, Fullstack & IA)
+- [x] Integrar formulário de contato funcional
+- [x] Adicionar `prefers-reduced-motion` para acessibilidade
 - [ ] Adicionar página individual para cada projeto com case study
 - [ ] Implementar blog/artigos sobre desenvolvimento
-- [ ] Integrar formulário de contato funcional (EmailJS ou similar)
-- [ ] Adicionar `prefers-reduced-motion` para acessibilidade
 - [ ] Alcançar **100/100** no Lighthouse mobile
 
 ## 📝 Licença
