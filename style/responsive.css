@@ -112,6 +112,16 @@
     padding-block: 3rem 2rem;
   }
 
+  main #project-filters {
+    gap: 0.5rem;
+    padding-bottom: 2rem;
+
+    & .filter-button {
+      padding: 0.4rem 1rem;
+      font-size: 0.8125rem;
+    }
+  }
+
   main .grid {
     padding-bottom: 5rem;
   }
