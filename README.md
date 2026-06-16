@@ -31,7 +31,7 @@ Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e for
 - ✅ Scroll suave com easing personalizado ao clicar na seta
 
 ### 📁 Seção Projetos
-- ✅ Galeria de **16 projetos** com thumbnails coloridos e links externos
+- ✅ Galeria de **17 projetos** com thumbnails coloridos e links externos
 - ✅ **Filtros por categoria**: Todos / HTML & CSS / JavaScript / Fullstack & IA
 - ✅ **Sistema "Mostrar mais/menos"** que calcula automaticamente quantos cards cabem em 2 linhas
 - ✅ Recalculo automático da quantidade visível ao **redimensionar a tela** (via `ResizeObserver`)

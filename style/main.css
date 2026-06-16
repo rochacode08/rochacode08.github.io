@@ -51,16 +51,17 @@ main {
 
     .project-card:nth-child(1)  img { border: 0.75rem solid var(--principal-blue);   border-bottom: none; }
     .project-card:nth-child(2)  img { border: 0.75rem solid var(--principal-blue);   border-bottom: none; }
-    .project-card:nth-child(3)  img { border: 0.75rem solid var(--principal-purple); border-bottom: none; }
-    .project-card:nth-child(5)  img { border: 0.75rem solid var(--principal-purple); border-bottom: none; }
-    .project-card:nth-child(6)  img { border: 0.75rem solid var(--principal-yellow); border-bottom: none; }
-    .project-card:nth-child(7)  img { border: 0.75rem solid var(--principal-purple); border-bottom: none; }
-    .project-card:nth-child(9)  img { border: 0.75rem solid var(--principal-red);    border-bottom: none; }
-    .project-card:nth-child(10) img { border: 0.75rem solid var(--principal-blue);   border-bottom: none; }
-    .project-card:nth-child(12) img { border: 0.75rem solid var(--principal-yellow); border-bottom: none; }
-    .project-card:nth-child(14) img { border: 0.75rem solid var(--principal-blue);   border-bottom: none; }
-    .project-card:nth-child(15) img { border: 0.75rem solid var(--principal-red);    border-bottom: none; }
-    .project-card:nth-child(16) img { border: 0.75rem solid var(--principal-yellow); border-bottom: none; }
+    .project-card:nth-child(3)  img { border: 0.75rem solid var(--principal-blue);   border-bottom: none; }
+    .project-card:nth-child(4)  img { border: 0.75rem solid var(--principal-purple); border-bottom: none; }
+    .project-card:nth-child(6)  img { border: 0.75rem solid var(--principal-purple); border-bottom: none; }
+    .project-card:nth-child(7)  img { border: 0.75rem solid var(--principal-yellow); border-bottom: none; }
+    .project-card:nth-child(8)  img { border: 0.75rem solid var(--principal-purple); border-bottom: none; }
+    .project-card:nth-child(10) img { border: 0.75rem solid var(--principal-red);    border-bottom: none; }
+    .project-card:nth-child(11) img { border: 0.75rem solid var(--principal-blue);   border-bottom: none; }
+    .project-card:nth-child(13) img { border: 0.75rem solid var(--principal-yellow); border-bottom: none; }
+    .project-card:nth-child(15) img { border: 0.75rem solid var(--principal-blue);   border-bottom: none; }
+    .project-card:nth-child(16) img { border: 0.75rem solid var(--principal-red);    border-bottom: none; }
+    .project-card:nth-child(17) img { border: 0.75rem solid var(--principal-yellow); border-bottom: none; }
 
     .project-card {
       background-color: var(--base-gray-300);
