@@ -15,7 +15,6 @@ Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e for
 - **HTML5** — estruturação semântica com `<header>`, `<main>`, `<section>` e meta tags Open Graph
 - **CSS3** — estilização com animações, CSS Grid, Flexbox, CSS Nesting e variáveis
 - **JavaScript (vanilla)** — lógica de tema, idioma, animações, formulário e partículas
-- **particles.js** — background animado com partículas (modo claro)
 - **FormSubmit** — envio de formulário de contato sem back-end
 - **Google Fonts** — tipografia com as fontes *Asap* (títulos), *Maven Pro* (texto) e *Inconsolata* (subtítulos)
 - **WebP** — formato moderno de imagens para melhor performance
@@ -54,7 +53,7 @@ Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e for
 
 ### 🌗 Tema claro / escuro
 - ✅ **Toggle entre dark mode e light mode** com salvamento no `localStorage`
-- ✅ Background animado com **particles.js** no modo claro (partículas azuis em movimento)
+- ✅ Modo claro em tom **papel quente** (creme), com as mesmas linhas de código do modo escuro em SVG
 - ✅ Lógica de elevação: cards brancos sobre superfícies cinzas no modo claro
 - ✅ `theme-color` meta dinâmico para a barra do browser em mobile
 - ✅ Transições suaves entre os temas
@@ -124,7 +123,6 @@ Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e for
  ┣ 📂 js
  ┃ ┣ 📜 i18n.js              → Sistema de internacionalização PT-BR / EN
  ┃ ┣ 📜 theme.js             → Toggle de tema claro/escuro
- ┃ ┣ 📜 particles.js         → Background de partículas (modo claro)
  ┃ ┣ 📜 animations.js        → IntersectionObserver + scroll suave
  ┃ ┣ 📜 viewMore.js          → Lógica do "mostrar mais/menos" e filtros
  ┃ ┗ 📜 contactForm.js       → Envio do formulário via FormSubmit
@@ -187,7 +185,6 @@ Abra o arquivo `index.html` no navegador — ou utilize a extensão **Live Serve
 ### ⚡ JavaScript
 - **IntersectionObserver API** para animar elementos ao entrarem na viewport
 - **ResizeObserver API** para recalcular layouts dinamicamente
-- **MutationObserver** para detectar mudanças de tema e sincronizar o particles.js
 - **Scroll suave customizado** com `requestAnimationFrame` e easing `easeInOutCubic`
 - Sistema de internacionalização com dicionário e `localStorage`
 - Toggle de tema com persistência e atualização de `theme-color` meta

@@ -33,21 +33,23 @@ section {
 }
 
 [data-theme="light"] {
-  --base-gray-100: #E8EAEE;
-  --base-gray-200: #F1F3F6;
-  --base-gray-300: #FFFFFF;
+  --base-gray-100: #EDE6DA;
+  --base-gray-200: #F5F0E8;
+  --base-gray-300: #FFFDF8;
 
-  --base-gray-400: #6B7079;
-  --base-gray-500: #3C414A;
-  --base-gray-600: #16181D;
+  --base-gray-400: #756C60;
+  --base-gray-500: #4A433A;
+  --base-gray-600: #1F1B16;
 
-  --principal-red:    #D24C5A;
-  --principal-purple: #7C3AED;
-  --principal-blue:   #2C7FC4;
-  --principal-green:  #6FAE3E;
-  --principal-yellow: #D29A33;
+  --principal-red:    #C8424F;
+  --principal-purple: #6D35D9;
+  --principal-blue:   #2A74B5;
+  --principal-green:  #5E9A35;
+  --principal-yellow: #C08A26;
 
-  --light-border: #E3E5EA;
+  --light-border: #E6DED2;
+  --light-shadow: rgba(74, 52, 28, 0.08);
+  --light-shadow-strong: rgba(74, 52, 28, 0.16);
 }
 
 [data-theme="light"] body {
@@ -55,22 +57,23 @@ section {
 }
 
 [data-theme="light"] header {
-  background-image: linear-gradient(180deg, #FFFFFF 0%, #F1F3F6 100%);
+  background-image: url(../assets/images/background-intro-light.svg);
 }
 
 [data-theme="light"] #contacts {
-  background-image: linear-gradient(180deg, #F1F3F6 0%, #E8EAEE 100%);
+  background-image: url(../assets/images/background-contacts-light.svg);
 }
 
 [data-theme="light"] #site-controls button {
-  background-color: #FFFFFF;
+  background-color: var(--base-gray-300);
   border-color: var(--light-border);
   color: var(--base-gray-500);
-  box-shadow: 0 1px 3px rgba(20, 22, 27, 0.06);
+  box-shadow: 0 1px 3px var(--light-shadow);
 }
 
 [data-theme="light"] #tags .tag {
-  box-shadow: 0 1px 3px rgba(20, 22, 27, 0.06);
+  border: 1px solid var(--light-border);
+  box-shadow: 0 1px 3px var(--light-shadow);
 }
 
 [data-theme="light"] .tag:hover {
@@ -78,53 +81,59 @@ section {
 }
 
 [data-theme="light"] #links .link img {
-  filter: brightness(0.25);
+  filter: brightness(0.25) sepia(0.3);
 }
 
 [data-theme="light"] #links .link:hover img:nth-child(1) {
-  filter: invert(45%) sepia(65%) saturate(625%) hue-rotate(176deg) brightness(80%) contrast(90%);
+  filter: invert(36%) sepia(60%) saturate(700%) hue-rotate(176deg) brightness(85%) contrast(95%);
 }
 
 [data-theme="light"] .arrow img {
-  filter: brightness(0.35);
+  filter: brightness(0.35) sepia(0.3);
 }
 
 [data-theme="light"] #projects .project-card {
-  box-shadow: 0 1px 3px rgba(20, 22, 27, 0.06);
+  border: 1px solid var(--light-border);
+  box-shadow: 0 2px 6px var(--light-shadow);
 }
 
 [data-theme="light"] #projects .project-card.animate-project-card:hover {
-  box-shadow: 0 10px 28px rgba(20, 22, 27, 0.12);
+  border-color: var(--principal-red);
+  outline: none;
+  box-shadow: 0 14px 30px var(--light-shadow-strong);
 }
 
 [data-theme="light"] #links .link {
-  box-shadow: 0 1px 3px rgba(20, 22, 27, 0.06);
+  border: 1px solid var(--light-border);
+  box-shadow: 0 1px 3px var(--light-shadow);
 }
 
-[data-theme="light"] .link:hover {
-  box-shadow: 0 4px 14px rgba(44, 127, 196, 0.25);
+[data-theme="light"] #links .link:hover {
+  border-color: var(--principal-blue);
+  outline: none;
+  box-shadow: 0 6px 16px rgba(42, 116, 181, 0.22);
 }
 
 [data-theme="light"] #services .card {
-  background-color: #FFFFFF;
+  background-color: var(--base-gray-300);
   border-color: var(--light-border);
-  box-shadow: 0 1px 3px rgba(20, 22, 27, 0.05);
+  box-shadow: 0 2px 6px var(--light-shadow);
 }
 
 [data-theme="light"] .card:hover {
-  box-shadow: 0 8px 22px rgba(210, 76, 90, 0.18);
+  box-shadow: 0 10px 24px rgba(200, 66, 79, 0.16);
 }
 
 [data-theme="light"] .toggle-button {
-  background-color: var(--base-gray-200);
-  color: #C2434E;
-  border-color: #C2434E;
+  background-color: var(--base-gray-300);
+  color: var(--principal-red);
+  border-color: var(--principal-red);
 }
 
 [data-theme="light"] .toggle-button:hover {
-  background-color: #C2434E;
-  color: #FFFFFF;
-  box-shadow: 0 5px 15px rgba(194, 67, 78, 0.25);
+  background-color: var(--principal-red);
+  color: #FFFDF8;
+  box-shadow: 0 6px 16px rgba(200, 66, 79, 0.25);
 }
 
 [data-theme="light"] #project-filters .filter-button {
@@ -133,6 +142,7 @@ section {
 
 [data-theme="light"] #contact-form input,
 [data-theme="light"] #contact-form textarea {
+  background-color: var(--base-gray-300);
   border-color: var(--light-border);
 }
 

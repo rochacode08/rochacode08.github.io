@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
       isLight ? 'Mudar para tema escuro' : 'Mudar para tema claro'
     );
     if (themeColorMeta) {
-      themeColorMeta.content = isLight ? '#F1F3F6' : '#0D0E11';
+      themeColorMeta.content = isLight ? '#F5F0E8' : '#0D0E11';
     }
   }
 
