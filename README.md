@@ -143,7 +143,7 @@ O projeto conta com **6 breakpoints** para suporte a múltiplos tamanhos de tela
 
 ## ⚡ Performance
 
-O projeto foi otimizado com foco em Core Web Vitals e auditado pelo **Google Lighthouse**:
+O projeto foi otimizado com foco em Core Web Vitals e auditado pelo **Google Lighthouse**, atingindo **100 em Performance, Acessibilidade, Boas Práticas e SEO** no desktop e no mobile:
 
 ### 🖥️ Desktop
 
@@ -219,7 +219,7 @@ Abra o arquivo `index.html` no navegador — ou utilize a extensão **Live Serve
 - [x] Adicionar `prefers-reduced-motion` para acessibilidade
 - [ ] Adicionar página individual para cada projeto com case study
 - [ ] Implementar blog/artigos sobre desenvolvimento
-- [ ] Alcançar **100/100** no Lighthouse mobile
+- [x] Alcançar **100/100** no Lighthouse mobile
 
 ## 📝 Licença
 
