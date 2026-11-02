@@ -34,6 +34,7 @@
 }
 
 body {
+  background-color: var(--base-gray-200);
   font: var(--text-md);
   color: var(--base-gray-500);
 }
