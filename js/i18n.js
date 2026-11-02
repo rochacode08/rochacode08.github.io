@@ -28,6 +28,7 @@ const translations = {
     proj_comidabr: 'Apresentação visual rica dedicada à gastronomia tradicional nacional.',
     proj_indieny: 'Vitrine festiva de final de ano projetada para a loja EspaçoIndie.',
     proj_voiture: 'Landing page cinematográfica para o Bugatti La Voiture Noire com video scrubbing, GSAP e modelo 3D.',
+    proj_encantos: 'Landing page mágica para um clube de assinatura de livros.',
 
     services_eyebrow: '<strong>Meus serviços</strong>',
     services_title: 'Como posso ajudar o seu negócio',
@@ -83,6 +84,7 @@ const translations = {
     proj_comidabr: 'Visually rich presentation dedicated to traditional Brazilian cuisine.',
     proj_indieny: 'Festive year-end showcase designed for the EspaçoIndie store.',
     proj_voiture: 'Cinematic landing page for the Bugatti La Voiture Noire with video scrubbing, GSAP and a 3D model.',
+    proj_encantos: 'Magical landing page for a book subscription club.',
 
     services_eyebrow: '<strong>My services</strong>',
     services_title: 'How I can help your business',
