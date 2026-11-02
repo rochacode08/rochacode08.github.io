@@ -79,7 +79,7 @@ Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e for
 | ⬛ Base 100 (bg)     | `#0D0E11` |
 | ⬛ Base 200          | `#16181D` |
 | 🔲 Base 300          | `#292C34` |
-| 🔘 Base 400          | `#878EA1` |
+| 🔘 Base 400          | `#9097A9` |
 | ⚪ Base 500          | `#C0C4CE` |
 | ⚪ Base 600          | `#E2E4E9` |
 | 🔴 Red              | `#E3646E` |
@@ -92,17 +92,17 @@ Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e for
 
 | Cor                 | Hex       |
 | ------------------- | --------- |
-| 🔘 Base 100 (fundo) | `#E8EAEE` |
-| ⚪ Base 200          | `#F1F3F6` |
-| ⚪ Base 300 (cards)  | `#FFFFFF` |
-| 🔘 Base 400          | `#6B7079` |
-| ⬛ Base 500          | `#3C414A` |
-| ⬛ Base 600          | `#16181D` |
-| 🔴 Red              | `#D24C5A` |
-| 🟣 Purple           | `#7C3AED` |
-| 🔵 Blue             | `#2C7FC4` |
-| 🟢 Green            | `#6FAE3E` |
-| 🟡 Yellow           | `#D29A33` |
+| 🟫 Base 100         | `#EDE6DA` |
+| 🟫 Base 200 (fundo) | `#F5F0E8` |
+| ⚪ Base 300 (cards)  | `#FFFDF8` |
+| 🔘 Base 400          | `#6B6256` |
+| ⬛ Base 500          | `#4A433A` |
+| ⬛ Base 600          | `#1F1B16` |
+| 🔴 Red              | `#B53A47` |
+| 🟣 Purple           | `#6D35D9` |
+| 🔵 Blue             | `#2A74B5` |
+| 🟢 Green            | `#5E9A35` |
+| 🟡 Yellow           | `#C08A26` |
 
 ## 📂 Estrutura do projeto
 

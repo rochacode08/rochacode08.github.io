@@ -11,7 +11,7 @@
     padding-block: 8rem 3rem;
 
     p.subtitle {
-      color: var(--principal-purple);
+      color: var(--purple-text);
     }
 
     p {
@@ -101,7 +101,7 @@
   }
 
   .form-button {
-    background-color: var(--principal-blue);
+    background-color: #2A74B5;
     color: #FFFFFF;
     border: none;
     border-radius: 0.5rem;

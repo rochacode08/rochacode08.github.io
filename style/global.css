@@ -8,7 +8,7 @@
   --base-gray-100: #0D0E11;
   --base-gray-200: #16181D;
   --base-gray-300: #292C34;
-  --base-gray-400: #878EA1;
+  --base-gray-400: #9097A9;
   --base-gray-500: #C0C4CE;
   --base-gray-600: #E2E4E9;
 
@@ -17,6 +17,7 @@
   --principal-blue: #3996DB;
   --principal-green: #82BC4F;
   --principal-yellow: #EABD5F;
+  --purple-text: #A78BFA;
 
   --font-family-title: "Asap", sans-serif;
   --font-family-subtitle: "Inconsolata", monospace, sans-serif;
