@@ -65,6 +65,7 @@ main {
     .project-card:nth-child(18) img { border: 0.75rem solid var(--principal-yellow); border-bottom: none; }
 
     .project-card {
+      position: relative;
       background-color: var(--base-gray-300);
       border-radius: 0.75rem;
       padding: 0.75rem 0.75rem 0;
@@ -90,6 +91,35 @@ main {
         border-radius: 0.5rem;
         object-position: center;
       }
+
+      .project-badge {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.375rem;
+        padding: 0.3rem 0.65rem;
+        border-radius: 999px;
+        background-color: rgba(13, 14, 17, 0.78);
+        backdrop-filter: blur(4px);
+        color: #E2E4E9;
+        font: 600 0.75rem/1 var(--font-family-text);
+        pointer-events: none;
+
+        &::before {
+          content: "";
+          width: 0.5rem;
+          height: 0.5rem;
+          border-radius: 50%;
+          background-color: var(--badge-color);
+        }
+      }
+
+      .badge-hand     { --badge-color: var(--principal-green); }
+      .badge-assisted { --badge-color: var(--principal-blue); }
+      .badge-ai       { --badge-color: var(--principal-purple); }
+      .badge-event    { --badge-color: var(--principal-yellow); }
     }
   }
 }

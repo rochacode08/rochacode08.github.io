@@ -30,6 +30,11 @@ const translations = {
     proj_voiture: 'Landing page cinematográfica para o Bugatti La Voiture Noire com video scrubbing, GSAP e modelo 3D.',
     proj_encantos: 'Landing page mágica para um clube de assinatura de livros.',
 
+    badge_hand: 'Feito à mão',
+    badge_assisted: 'Autoral + IA',
+    badge_ai: 'Feito com IA',
+    badge_event: 'Projeto de evento',
+
     services_eyebrow: '<strong>Meus serviços</strong>',
     services_title: 'Como posso ajudar o seu negócio',
     service1_title: 'Websites e aplicativos',
@@ -85,6 +90,11 @@ const translations = {
     proj_indieny: 'Festive year-end showcase designed for the EspaçoIndie store.',
     proj_voiture: 'Cinematic landing page for the Bugatti La Voiture Noire with video scrubbing, GSAP and a 3D model.',
     proj_encantos: 'Magical landing page for a book subscription club.',
+
+    badge_hand: 'Handcrafted',
+    badge_assisted: 'Handmade + AI',
+    badge_ai: 'Built with AI',
+    badge_event: 'Event project',
 
     services_eyebrow: '<strong>My services</strong>',
     services_title: 'How I can help your business',
